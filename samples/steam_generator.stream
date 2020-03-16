@@ -1,0 +1,10 @@
+1 6 
+problem sg1
+
+willOverheat sg1 2 
+problem sg2
+
+problem sg3 
+problem sg4
+willOverheat sg3 4 
+willOverheat sg3 3
