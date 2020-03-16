@@ -1,13 +1,13 @@
 #!/bin/bash
 
-EXECUTABLE=mars-build/mars
+EXECUTABLE=mars
 
 make_mars() {
-    mkdir -p cmake-build-release/mars-build
-    cd cmake-build-release/mars-build
-    cmake -DCMAKE_BUILD_TYPE=Release ../..
+    mkdir -p cmake-build-release
+    cd cmake-build-release
+    cmake -DCMAKE_BUILD_TYPE=Release ..
     make mars 
-    cd ../..
+    cd ..
 }
 
 run_mars () {
@@ -44,3 +44,7 @@ else
 	print_help
 fi
 
+
+
+
+#ln -s cmake-build-release/compile_commands.json

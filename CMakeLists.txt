@@ -8,7 +8,7 @@ set( CMAKE_EXPORT_COMPILE_COMMANDS ON )
 ################################### ARES ###################################
 include_directories(../ares/include/)
 file(GLOB ARES_SOURCES
-    "../ares-plus-plus/src/formula/*.cpp"
+    "../ares/src/formula/*.cpp"
         "../ares/src/formula/extended/*.cpp"
         "../ares/src/util/*.cpp"
         "../ares/src/rule/*.cpp"
