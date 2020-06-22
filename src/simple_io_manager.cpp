@@ -29,7 +29,7 @@ SimpleIOManager::read_stream_data(ares::util::Timeline &timeline) {
 }
 
 std::vector<std::shared_ptr<ares::util::Grounding>>
-SimpleIOManager::read_background_data() {
+SimpleIOManager::read_background_data(ares::util::Timeline &timeline) {
   //    auto data_vector = simple_background_reader.read_all_data();
   //    return simple_parser.parse_data(data_vector);
   return std::vector<std::shared_ptr<ares::util::Grounding>>();

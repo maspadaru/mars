@@ -35,7 +35,7 @@ class SimpleIOManager : public ares::core::IOManager {
     read_stream_data(ares::util::Timeline &timeline) override;
 
     std::vector<std::shared_ptr<ares::util::Grounding>>
-    read_background_data() override;
+    read_background_data(ares::util::Timeline &timeline) override;
 
     void
     write_output_data(uint64_t time,
